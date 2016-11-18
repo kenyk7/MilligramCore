@@ -1,7 +1,7 @@
 # Features
 **Gulp: Sass, Browser-sync, Cssnano, Sourcemaps css, Plumber**
 
-Minimal css frontend framework scalable and extensible baased milligram and use grid core.css
+Minimal css frontend framework scalable y extensible basado en milligram y core.css
 
 ## MilligramCore
 
@@ -22,7 +22,7 @@ $ bower install
 ```
 
   - Lo siguiente es abrir el archivo **gulpfile.js** y hacer la siguientes ajustes:
-  - Una vez hecho lo anterior abrir una terminal en esta carpeta y ejecutar:
+  - Una vez hecho lo anterior abrir una términal en esta carpeta y ejecutar:
 
 ```sh
 $ gulp serve
@@ -49,15 +49,15 @@ $ bower install
 ```
 
 ## Sass utils core
-Use sass mixin responsive helpers file in `sass/mixin/_media_queries.scss`
+Usar sass mixin responsive helpers `sass/mixin/_media_queries.scss`
 
-Example use `@include maxw(xs){};` for  `@media (max-width: 767px){};`
+Ejemplo de uso `@include maxw(xs){};` para  `@media (max-width: 767px){};`
 
-Or use `@include minw(xs){};` for  `@media (min-width: 768px){};`
+O usar `@include minw(xs){};` para  `@media (min-width: 768px){};`
 
 ### Sass extensible buttons
 
-Use var $buttons for add type buttons for easy generator
+Usar varible $buttons para agregar nuevos bottons de forma fácil con el mixin generator
 
 ```scss
 $buttons: (
@@ -68,13 +68,13 @@ $buttons: (
 ```
 
 ### Existing mixin media queries for default:
-Mixin `maxw($breakpoint)` with parameters **lg** = 80rem , **md** = 64rem , **sm** = 48rem , **xs** = 32rem.
+Mixin `maxw($breakpoint)` con parámetros **lg** = 80rem , **md** = 64rem , **sm** = 48rem , **xs** = 32rem.
 
-Example `@include maxw(md){...};`  output  `@media (max-width: 64rem){...};`
+Ejemplo `@include maxw(md){...};`  output  `@media (max-width: 64rem){...};`
 
-Mixin `minw($breakpoint)` with parameters **lg** = 80rem , **md** = 64rem , **sm** = 48rem , **xs** = 32rem.
+Mixin `minw($breakpoint)` con parámetros **lg** = 80rem , **md** = 64rem , **sm** = 48rem , **xs** = 32rem.
 
-Example `@include minw(xs){...};`  output  `@media (max-width: 732rem){...};`
+Ejemplo `@include minw(xs){...};`  output  `@media (max-width: 732rem){...};`
 
 
 #### Dependencies
