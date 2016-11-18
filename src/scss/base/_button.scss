@@ -1,0 +1,117 @@
+
+// Button
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+
+.btn,
+button,{
+	background-color: $brand-primary;
+	border: .1rem solid $brand-primary;
+	border-radius: $border-radius-base;
+	color: $color-initial;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 1.1rem;
+	font-weight: 700;
+	height: 3.8rem;
+	letter-spacing: .1rem;
+	line-height: 3.8rem;
+	padding: 0 3.0rem;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	white-space: nowrap;
+	user-select: none;
+	overflow: hidden;
+	transition: all 60ms ease-in-out;
+	
+	&:focus,
+	&:hover{
+		background-color: darken($brand-primary, $amount);
+		border-color: darken($brand-primary, $amount);
+		color: $color-initial;
+		outline: 0;
+	}
+	&:active{
+		transition: all 60ms ease;
+		transform: scale(0.95);
+		opacity: .9;
+	}
+	&[disabled]{
+		cursor: default;
+		cursor: not-allowed;
+		opacity: .5;
+	
+		&:focus,
+		&:hover{
+			background-color: $brand-primary;
+			border-color: $brand-primary;
+		}
+		&:active{
+			transform: scale(1);
+		}
+	}
+	&.btn-outline{
+		background-color: transparent;
+		color: $brand-primary;
+
+		&:focus,
+		&:hover{
+			background-color: $brand-primary;
+			border-color: $brand-primary;
+			color: $color-initial;
+		}
+
+		&[disabled]{
+
+			&:focus,
+			&:hover{
+				background-color: inherit;
+				border-color: inherit;
+				color: $brand-primary;
+			}
+		}
+	}
+	&.btn-clear{
+		background-color: transparent;
+		border-color: transparent;
+		color: $brand-primary;
+
+		&:focus,
+		&:hover{
+			background-color: transparent;
+			border-color: transparent;
+			color: darken($brand-primary, $amount);
+		}
+		&[disabled]{
+			
+				&:focus,
+				&:hover{
+					background-color: transparent;
+					border-color: transparent;
+				}
+		}
+	}
+}
+
+// Btns helpers
+//-------------------------------------------------------
+.btn-block{
+	display: block;
+	width: 100%;
+	@include maxw(xs){
+		padding: 0 1.5rem;
+	}
+}
+.btn-square{
+	border-radius: 0px;
+}
+.btn-round{
+	border-radius: 50px;
+}
+
+// More buttons use extend mixin
+//-------------------------------------------------------
+
+@each $btn, $color in $buttons {
+	@include button-extend($btn, $color);
+}

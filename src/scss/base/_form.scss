@@ -1,0 +1,68 @@
+
+// Form
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+
+input[type='email'],
+input[type='number'],
+input[type='password'],
+input[type='search'],
+input[type='tel'],
+input[type='text'],
+input[type='url'],
+textarea,
+select{
+	background-color: transparent;
+	border: 1px solid $color-quaternary;
+	border-radius: $border-radius-base;
+	box-shadow: none;
+	box-sizing: inherit; // Forced to replace inherit values of the normalize.css
+	height: 3.8rem;
+	padding: .6rem 1.2rem; // The .6rem vertically centers text on FF, ignored by Webkit
+	width: 100%;
+	font-family: $font-family;
+	font-size: 1.4rem;
+	&:focus{
+		border-color: $brand-primary;
+		outline: 0;
+	}
+}
+textarea{
+	min-height: 6.5rem;
+}
+
+label,
+legend{
+	display: block;
+	font-size: 1.6rem;
+	font-weight: 700;
+	margin-bottom: .5rem;
+}
+fieldset{
+	border-width: 0;
+	padding: 0;
+}
+input[type='checkbox'],
+input[type='radio']{
+	display: inline;
+}
+
+.label-inline{
+	display: inline-block;
+	font-weight: normal;
+	margin-left: .5rem;
+}
+
+::-webkit-input-placeholder {
+	color: #777;
+	font-size: 1.4rem;
+}
+::-moz-placeholder {
+	color: #777;
+	opacity: 1;
+	font-size: 1.4rem;
+}
+:-ms-input-placeholder {
+	color: #777;
+	opacity: 1;
+	font-size: 1.4rem;
+}

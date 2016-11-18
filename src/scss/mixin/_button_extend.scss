@@ -1,0 +1,49 @@
+// Mixin buttons extends
+// ----------------------------------------------
+
+@mixin button-extend($class, $color){
+	.btn-#{$class} {
+		background-color: $color;
+		border-color: $color;
+
+		&:hover,
+		&:focus{
+			background-color: darken($color, $amount);
+			border-color: darken($color, $amount);
+		}
+		&[disabled]{
+			
+			&:focus,
+			&:hover{
+				background-color: $color;
+				border-color: $color;
+			}
+		}
+		&.btn-outline{
+			color: $color;
+
+			&:hover,
+			&:focus{
+				background-color: $color;
+				border-color: $color;
+			}
+
+			&[disabled]{
+			
+				&:focus,
+				&:hover{
+					color: $color;
+				}
+			}
+		}
+
+		&.btn-clear{
+			color: $color;
+
+			&:hover,
+			&:focus{
+				color: darken($color, $amount);
+			}
+		}
+	}
+}

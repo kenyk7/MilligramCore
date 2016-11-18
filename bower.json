@@ -1,0 +1,14 @@
+{
+  "name": "MilligramCore",
+  "homepage": "http://github.com/kenyk7/MilligramCore",
+  "authors": [
+    {
+      "name": "Keny Romero",
+      "email": "kenykalin@gmail.com",
+      "homepage": "http://github.com/kenyk7"
+    }
+  ],
+  "dependencies": {
+    "normalize-css": "^5.0.0"
+  }
+}

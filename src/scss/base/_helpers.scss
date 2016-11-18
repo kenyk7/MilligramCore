@@ -1,0 +1,59 @@
+/**
+ * Classes to help you in your work
+ */
+
+
+// Text
+// ------------------------------------------------
+.text-left{
+    text-align: left;
+}
+.text-right{
+    text-align: right;
+}
+.text-center{
+	text-align: center;
+}
+
+// Tables helpers
+// ------------------------------------------------
+.table-responsive{
+	overflow-x: auto;
+	table{
+		border-collapse: collapse;
+	}
+}
+.table-xs{
+	tr{
+		th,td{
+			padding: 0.8rem 1rem;
+		}
+	}
+}
+
+// Others
+// ------------------------------------------------
+.disable-scroll{
+	overflow: hidden;
+	position: fixed;
+	@include maxw(sm){
+		position: fixed;
+		left: 0;
+		right: 0;
+	}
+}
+
+// Responsive helpers
+// ------------------------------------------------
+
+@include maxw(sm){
+	.text-center-sm{
+		text-align: center;
+	}
+}
+
+@include maxw(xs){
+	.text-center-xs{
+		text-align: center;
+	}
+}

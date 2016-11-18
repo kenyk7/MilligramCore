@@ -1,0 +1,120 @@
+
+// Grid
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+
+// Mixin col width this use
+@mixin col($prefix){
+	@for $i from 1 through 12 {
+	    .#{$prefix}-#{$i} {
+	        width: percentage($i / 12);
+	    }
+	}
+}
+
+// Mixin col block
+@mixin col-size-block($media){
+	.#{$media}-1,
+	.#{$media}-2,
+	.#{$media}-3,
+	.#{$media}-4,
+	.#{$media}-5,
+	.#{$media}-6,
+	.#{$media}-7,
+	.#{$media}-8,
+	.#{$media}-9,
+	.#{$media}-10,
+	.#{$media}-11,
+	.#{$media}-12 {
+		display: block;
+	}
+}
+
+// Mixin media queries: name & value
+// Dependency mixin col width and col block
+@mixin mq($media, $val){
+	@media screen and (min-width: $val) {
+		.#{$media}-0 {
+			display: none;
+		}
+		@include col-size-block(#{$media});
+		@include col(#{$media});
+	}
+}
+
+// Container
+.container{
+	margin: 0 auto;
+	max-width: $mq-lg;
+	padding: 0 1.5rem;
+	position: relative;
+	width: 100%;
+
+	@include maxw(xs){
+		padding: 0 1.2rem;
+	}
+}
+
+// Sizes
+.xs{
+	max-width: $mq-xs;
+}
+.sm{
+	max-width: $mq-sm;
+}
+.md{
+	max-width: $mq-md;
+}
+.lg{
+	max-width: $mq-lg;
+}
+.xl{
+	max-width: $mq-xl;
+}
+
+// Rows
+.row{
+	margin: 0 -1rem;
+
+	&:before,&:after{
+		content: ''; display: table;
+	}
+
+	&:after{
+		clear: both;
+	}
+
+	@include maxw(xs){
+		margin: 0 -0.6rem;
+	}
+}
+
+// Col default
+.col{
+	float: left;
+	padding: 0 1.1rem;
+	width: 100%;
+	@include maxw(xs){
+		padding: 0 0.7rem;
+	}
+}
+
+/* Mobile first focus */
+// Media xs
+.xs-0 {
+	display: none;
+}
+@include col-size-block("xs");
+@include col('xs');
+
+
+/* 512px (Extra-Small) to Up */
+@include mq('sm', $mq-xs);
+
+/* 768px (Small) to Up */
+@include mq('md', $mq-sm);
+
+/* 1024px (Medium) to Up */
+@include mq('lg', $mq-md);
+
+/* 1280px (Large) to Up */
+@include mq('xl', $mq-lg);

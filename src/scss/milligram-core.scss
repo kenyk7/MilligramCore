@@ -1,0 +1,23 @@
+// ==== Config ==== //
+
+// Configuration vars
+@import "_config";
+
+/*!
+Name: #{$name}
+URI: #{$uri}
+Author: #{$author}
+Author URI: #{$author-uri}
+Description: #{$description}
+Version: #{$version}
+Release: #{$release}
+*/
+
+// Base normalizecss
+@import "bower_components/normalize-css/normalize";
+
+// Add mixins
+@import "mixin/_general";
+
+// Styles
+@import "base/_general";

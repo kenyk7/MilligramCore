@@ -1,0 +1,67 @@
+// ==== Config ==== //
+
+// Set all your configuration variables here!
+// ------------------------------------------------
+$name: "MilligramCore";
+$uri: "https://github.com/kenyk7/MilligramCore";
+$author: "Keny Romero";
+$author-uri: "http://github.com/kenyk7";
+$description: "Minimal css frontend framework scalable and extensible based milligram and use grid core.css";
+$version: "0.1";
+$release: "beta";
+
+
+// Define colors
+// ------------------------------------------------
+
+$brand-primary: #303F9F !default;
+$brand-second: #606c76 !default;
+
+
+// Background body and text color
+// ------------------------------------------------
+$body-bg: #fff !default;
+$color-text: #606c76 !default;
+
+$color-initial: #fff !default;
+$color-tertiary: #f4f5f6 !default;
+$color-quaternary: #d1d1d1 !default;
+$color-quinary: #e1e1e1 !default;
+
+
+// Fonts
+// ------------------------------------------------
+$font-size-base: 1.6em !default;
+$font-family:  'Roboto', sans-serif !default;
+$headings-font-weight: 300 !default;
+
+// For hover or active darken primary 
+$amount: 10%;
+
+
+// Radius
+// ------------------------------------------------
+$border-radius-base: 0.3em !default;
+
+// Media queries vars
+// ------------------------------------------------
+
+$mq-xs: 32rem; /* 512px (Extra-Small) */
+
+$mq-sm: 48rem; /* 768px (Small) */
+
+$mq-md: 64rem; /* 1024px (Medium) */
+
+$mq-lg: 80rem; /* 1280px (Large) */
+
+$mq-xl: 96rem; /* 1536px (Extra-Large) */
+
+
+// Buttons array generate
+// ------------------------------------------------
+
+// Add or modify buttons array
+$buttons: (
+  second: #606c76,
+  black: black
+);
