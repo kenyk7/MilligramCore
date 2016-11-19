@@ -1,5 +1,5 @@
 /**
- * Classes to help you in your work
+ * Helpers class
  */
 
 
@@ -35,7 +35,6 @@
 // ------------------------------------------------
 .disable-scroll{
 	overflow: hidden;
-	position: fixed;
 	@include maxw(sm){
 		position: fixed;
 		left: 0;

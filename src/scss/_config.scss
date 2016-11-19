@@ -7,7 +7,7 @@ $uri: "https://github.com/kenyk7/MilligramCore";
 $author: "Keny Romero";
 $author-uri: "http://github.com/kenyk7";
 $description: "Minimal css frontend framework scalable and extensible based milligram and use grid core.css";
-$version: "0.1";
+$version: "0.1.0";
 $release: "beta";
 
 
@@ -35,26 +35,34 @@ $font-size-base: 1.6em !default;
 $font-family:  'Roboto', sans-serif !default;
 $headings-font-weight: 300 !default;
 
-// For hover or active darken primary 
-$amount: 10%;
+
+// For hover or active darken
+// ------------------------------------------------
+$amount: 10% !default;
 
 
 // Radius
 // ------------------------------------------------
 $border-radius-base: 0.3em !default;
 
+
 // Media queries vars
 // ------------------------------------------------
 
-$mq-xs: 32rem; /* 512px (Extra-Small) */
+$mq-xs: 32rem !default; /* 512px (Extra-Small) */
 
-$mq-sm: 48rem; /* 768px (Small) */
+$mq-sm: 48rem !default; /* 768px (Small) */
 
-$mq-md: 64rem; /* 1024px (Medium) */
+$mq-md: 64rem !default; /* 1024px (Medium) */
 
-$mq-lg: 80rem; /* 1280px (Large) */
+$mq-lg: 80rem !default; /* 1280px (Large) */
 
-$mq-xl: 96rem; /* 1536px (Extra-Large) */
+$mq-xl: 96rem !default; /* 1536px (Extra-Large) */
+
+
+// Max width conainer default use default $mq-lg
+// ------------------------------------------------
+$with-container: $mq-lg !default;
 
 
 // Buttons array generate
