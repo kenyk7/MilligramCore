@@ -14,7 +14,7 @@ body{
 	color: $color-text;
 	font-family: $font-family;
 	font-size: $font-size-base; // Currently ems cause chrome bug misinterpreting rems on body element
-	font-weight: 300;
+	font-weight: $font-weight-body;
 	letter-spacing: .01em;
 	line-height: 1.6;
 }

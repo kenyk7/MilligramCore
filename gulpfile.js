@@ -2,7 +2,7 @@
 
 var src = './src/';
 var dist = './dist/';
-var localPort = 3005;
+var localPort = 3000;
 
 // define package
 var gulp = require('gulp'),

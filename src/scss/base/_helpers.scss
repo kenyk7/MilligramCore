@@ -5,14 +5,14 @@
 
 // Text
 // ------------------------------------------------
+.text-center{
+	text-align: center;
+}
 .text-left{
     text-align: left;
 }
 .text-right{
     text-align: right;
-}
-.text-center{
-	text-align: center;
 }
 
 // Tables helpers
@@ -23,16 +23,12 @@
 		border-collapse: collapse;
 	}
 }
-.table-xs{
-	tr{
-		th,td{
-			padding: 0.8rem 1rem;
-		}
-	}
-}
+
 
 // Others
 // ------------------------------------------------
+
+// disable scroll to body
 .disable-scroll{
 	overflow: hidden;
 	@include maxw(sm){
@@ -44,13 +40,11 @@
 
 // Responsive helpers
 // ------------------------------------------------
-
 @include maxw(sm){
 	.text-center-sm{
 		text-align: center;
 	}
 }
-
 @include maxw(xs){
 	.text-center-xs{
 		text-align: center;
