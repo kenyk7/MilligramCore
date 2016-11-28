@@ -83,11 +83,11 @@ button,{
 		}
 		&[disabled]{
 			
-				&:focus,
-				&:hover{
-					background-color: transparent;
-					border-color: transparent;
-				}
+			&:focus,
+			&:hover{
+				background-color: transparent;
+				border-color: transparent;
+			}
 		}
 	}
 }
