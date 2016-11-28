@@ -1,6 +1,20 @@
 {
   "name": "MilligramCore",
-  "homepage": "http://github.com/kenyk7/MilligramCore",
+  "description": "Minimal css frontend framework scalable and extensible baased milligram and use grid core.css",
+  "homepage": "http://github.com/kenyk7/MilligramCore.git",
+  "license": "MIT",
+  "main": "src/scss/milligram-core.scss",
+  "keywords": [
+    "css",
+    "sass",
+    "mobile-first",
+    "responsive",
+    "front-end",
+    "framework",
+    "modern framework",
+    "minimal",
+    "web"
+  ],
   "authors": [
     {
       "name": "Keny Romero",
