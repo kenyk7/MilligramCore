@@ -1,5 +1,5 @@
 # Features
-**Gulp: Sass, Browser-sync, Cssnano, Sourcemaps css, Plumber**
+**Gulp: Sass, browser-sync, cssnano, sourcemaps css, plumber, auto-prefixer**
 
 Minimal css frontend framework scalable y extensible basado en milligram y core.css
 
