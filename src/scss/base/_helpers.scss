@@ -50,3 +50,24 @@
 		text-align: center;
 	}
 }
+
+.hidden-xs{
+	display: none;
+	@include minw(xs){
+		display: block;
+	}
+}
+
+.visible-xs{
+	display: block;
+	@include minw(xs){
+		display: none;
+	}
+}
+
+.visible-inline-xs{
+	display: inline-block;;
+	@include minw(xs){
+		display: none;
+	}
+}
