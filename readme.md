@@ -70,7 +70,7 @@ Ejemplo `@include maxw(md){...};`  output  `@media (max-width: 64rem){...};`
 
 Mixin `minw($breakpoint)` con parámetros **lg** = 80rem , **md** = 64rem , **sm** = 48rem , **xs** = 32rem.
 
-Ejemplo `@include minw(xs){...};`  output  `@media (max-width: 732rem){...};`
+Ejemplo `@include minw(xs){...};`  output  `@media (max-width: 32rem){...};`
 
 
 #### Dependencies
