@@ -33,7 +33,7 @@ $color-quinary: #e1e1e1 !default;
 // ------------------------------------------------
 $font-size-base: 1.6em !default;
 $font-weight-body: 300 !default;
-$font-family:  'Roboto', sans-serif !default;
+$font-family: 'Roboto', Arial, "Helvetica Neue", Helvetica, sans-serif !default;
 $headings-font-weight: 300 !default;
 
 
@@ -63,7 +63,7 @@ $mq-xl: 96rem !default; /* 1536px (Extra-Large) */
 
 // Max width conainer default use default $mq-lg
 // ------------------------------------------------
-$with-container: $mq-lg !default;
+$with-container: $mq-xl !default;
 
 
 // Buttons array generate
@@ -72,5 +72,8 @@ $with-container: $mq-lg !default;
 // Add or modify buttons array
 $buttons: (
   second: #606c76,
-  black: black
+  success: #4caf50,
+  info: #00bcd4,
+  danger: #e51c23,
+  warning: #ff9800
 ) !default;

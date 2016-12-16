@@ -31,7 +31,7 @@
 // Disable scroll to body
 .disable-scroll{
 	overflow: hidden;
-	@include maxw(sm){
+	@include media-down(sm){
 		position: fixed;
 		left: 0;
 		right: 0;
@@ -48,12 +48,12 @@
 // ------------------------------------------------
 
 // Center down text
-@include maxw(sm){
+@include media-down(sm){
 	.text-center-sm{
 		text-align: center;
 	}
 }
-@include maxw(xs){
+@include media-down(xs){
 	.text-center-xs{
 		text-align: center;
 	}
@@ -62,19 +62,19 @@
 // Visibility helpers
 .hidden-xs{
 	display: none;
-	@include minw(xs){
+	@include media-up(xs){
 		display: block;
 	}
 }
 .visible-xs{
 	display: block;
-	@include minw(xs){
+	@include media-up(xs){
 		display: none;
 	}
 }
 .visible-inline-xs{
 	display: inline-block;;
-	@include minw(xs){
+	@include media-up(xs){
 		display: none;
 	}
 }

@@ -12,7 +12,7 @@ $minw-lg: "(min-width: "#{$mq-lg}")";
 
 // Down
 // -----------------------------------------
-@mixin maxw($breakpoint) {
+@mixin media-down($breakpoint) {
 
 	@if $breakpoint == xs {
 		@media #{$maxw-xs} {
@@ -43,7 +43,7 @@ $minw-lg: "(min-width: "#{$mq-lg}")";
 
 // Up
 // -----------------------------------------
-@mixin minw($breakpoint) {
+@mixin media-up($breakpoint) {
 
 	@if $breakpoint == xs {
 		@media #{$minw-xs} {
